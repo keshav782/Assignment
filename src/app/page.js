@@ -1,95 +1,118 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Product from "./component/Product";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+   <div className={styles.big_container}>
+        <div className={styles.border}>
+            <div className={styles.commom}>
+                  <Image
+                  src='/Frame 461.png'
+                  alt="bags png"
+                  width={90}
+                  height={90}
+                  className={styles.img}
+                  />
+                  <div className={styles.words}>All Bags</div>
+            </div>
+            <div className={styles.commom}>
+                  <Image
+                  src='/Frame 50.png'
+                  alt="pouncgh"
+                  width={90}
+                  height={90}
+                  />
+                  <div className={styles.pouch}>Vanity Pouch</div>
+            </div>
+            <div className={styles.commom}>
+                  <Image
+                  src='/Frame 49.png'
+                  alt="pouncgh"
+                  width={90}
+                  height={90}
+                  />
+                  <div className={styles.pouch}>Tote Bag</div>
+            </div><div className={styles.commom}>
+                  <Image
+                  src='/Frame 13.png'
+                  alt="pouncgh"
+                  width={90}
+                  height={90}
+                  />
+                  <div className={styles.pouch}>Duffle Bag</div>
+            </div><div className={styles.commom}>
+                  <Image
+                  src='/Frame 49-1.png'
+                  alt="pouncgh"
+                  width={90}
+                  height={90}
+                  />
+                  <div className={styles.pouch}>Laptop Sleeve</div>
+            </div><div className={styles.commom}>
+                  <Image
+                  src='/Frame 49-2.png'
+                  alt="pouncgh"
+                  width={90}
+                  height={90}
+                  />
+                  <div className={styles.pouch}>Messenger Bags</div>
+            </div><div className={styles.commom}>
+                  <Image
+                  src='/Frame 22.png'
+                  alt="pouncgh"
+                  width={90}
+                  height={90}
+                  />
+                  <div className={styles.pouch}>Slings Bgs</div>
+            </div>
+            <div className={styles.commom}>
+                  <Image
+                  src='/Frame 20.png'
+                  alt="pouncgh"
+                  width={90}
+                  height={90}
+                  />
+                  <div className={styles.pouch}>Handbags</div>
+            </div>
+            
+            <div className={styles.commom}>
+                  <Image
+                  src='/Frame 46.png'
+                  alt="pouncgh"
+                  width={90}
+                  height={90}
+                  />
+                  <div className={styles.pouch}>Bucket Bag</div>
+            </div>
         </div>
-      </div>
+        <div className={styles.group}>
+            <div className={styles.containerstart}>
+              <div className={styles.containertext}>Bags</div>
+              <Image
+              src='/Ellipse 35.png'
+              alt="ellipse png"
+              width={5}
+              height={5}
+              />
+              <div className={styles.backpacks}>Backpacks</div>
+            </div>
+            <div className={styles.containerend}>
+              <div className={styles.containerendone}>13 products</div>
+              <Image
+              src='/Vector 4.png'
+              alt="vectorpng"
+              width={16.67}
+              height={20}
+              className={styles.contImage}
+              />
+            </div>
+        </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        
+   </div>
+   <Product />
+   </>
   );
 }
